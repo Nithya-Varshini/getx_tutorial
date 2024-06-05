@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_new/pages/page2.dart';
+// import 'package:getx_new/pages/page2.dart';
 import 'package:getx_new/utils/content.dart';
 
 class PageOneContent extends StatelessWidget {
@@ -24,7 +24,10 @@ class PageOneContent extends StatelessWidget {
             child: const Text('Increment'),
           ),
           ElevatedButton(
-              onPressed: () => data = Get.to(PageTwoContent()),
+              onPressed: () async => {
+                    data = await Get.toNamed('/second'),
+                    c.title.value = data,
+                  },
               child: const Text('Next Page'))
         ],
       ),
