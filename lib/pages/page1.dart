@@ -14,22 +14,30 @@ class PageOneContent extends StatelessWidget {
       appBar: AppBar(
         title: Obx(() => Text(c.title.value)),
       ),
-      body: Column(
-        children: [
-          Center(
-            child: Obx(() => Text(c.title.value)),
-          ),
-          ElevatedButton(
-            onPressed: () => c.increment(),
-            child: const Text('Increment'),
-          ),
-          ElevatedButton(
-              onPressed: () async => {
-                    data = await Get.toNamed('/second'),
-                    c.title.value = data,
-                  },
-              child: const Text('Next Page'))
-        ],
+      body: InteractiveViewer(
+        child: Column(
+          children: [
+            Center(
+              child: Obx(() => Text(c.title.value)),
+            ),
+            ElevatedButton(
+              onPressed: () => c.increment(),
+              child: const Text('Increment'),
+            ),
+            ElevatedButton(
+                onPressed: () async => {
+                      data = await Get.toNamed('/second'),
+                      c.title.value = data,
+                    },
+                child: const Text('Next Page')),
+            ElevatedButton(
+                onPressed: () async => {
+                      data = await Get.toNamed('/table'),
+                      c.title.value = data,
+                    },
+                child: const Text('Dynamic Table')),
+          ],
+        ),
       ),
     );
   }
