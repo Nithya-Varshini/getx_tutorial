@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.6
+  responsive_table: ^0.2.0+2
 
 dev_dependencies:
   flutter_test:

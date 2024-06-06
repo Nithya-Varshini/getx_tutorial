@@ -36,6 +36,18 @@ class PageOneContent extends StatelessWidget {
                       c.title.value = data,
                     },
                 child: const Text('Dynamic Table')),
+            ElevatedButton(
+                onPressed: () async => {
+                      data = await Get.toNamed('/responsivetable'),
+                      c.title.value = data,
+                    },
+                child: const Text('Responsive Table')),
+            ElevatedButton(
+                onPressed: () async => {
+                      data = await Get.toNamed('/customtable'),
+                      c.title.value = data,
+                    },
+                child: const Text('custom Table')),
           ],
         ),
       ),

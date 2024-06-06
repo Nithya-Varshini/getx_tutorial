@@ -47,8 +47,8 @@ class CustomTable extends StatelessWidget {
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: DynamicTable(
-              columnTitles: columnTitles,
-              rowData: rowData,
+              columnTitles: columnTitles1,
+              rowData: rowData1,
             ),
           ),
         ),
