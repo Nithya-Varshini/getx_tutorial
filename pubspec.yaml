@@ -9,8 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_data_table: ^1.1.2
   get: ^4.6.6
   responsive_table: ^0.2.0+2
+  syncfusion_flutter_datagrid_export: ^25.2.7
 
 dev_dependencies:
   flutter_test:

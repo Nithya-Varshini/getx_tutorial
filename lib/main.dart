@@ -4,6 +4,7 @@ import 'package:getx_new/pages/customTable.dart';
 import 'package:getx_new/pages/page1.dart';
 import 'package:getx_new/pages/page2.dart';
 import 'package:getx_new/pages/responsiveTable.dart';
+import 'package:getx_new/pages/sortableTable.dart';
 import 'package:getx_new/pages/table.dart';
 import 'package:getx_new/pages/unknownRoutePage.dart';
 
@@ -36,6 +37,10 @@ class MainApp extends StatelessWidget {
         GetPage(
             name: '/customtable',
             page: () => CustomTable1(),
+            transition: Transition.leftToRightWithFade),
+            GetPage(
+            name: '/sortabletable',
+            page: () => SortableTable(),
             transition: Transition.leftToRightWithFade),
       ],
     );

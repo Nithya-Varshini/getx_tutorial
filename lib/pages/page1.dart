@@ -48,6 +48,12 @@ class PageOneContent extends StatelessWidget {
                       c.title.value = data,
                     },
                 child: const Text('custom Table')),
+            ElevatedButton(
+                onPressed: () async => {
+                      data = await Get.toNamed('/sortabletable'),
+                      c.title.value = data,
+                    },
+                child: const Text('Sortable Table')),
           ],
         ),
       ),
