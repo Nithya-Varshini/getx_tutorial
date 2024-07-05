@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_new/pages/complex_table.dart';
 import 'package:getx_new/pages/customTable.dart';
 import 'package:getx_new/pages/page1.dart';
 import 'package:getx_new/pages/page2.dart';
@@ -41,6 +42,10 @@ class MainApp extends StatelessWidget {
             GetPage(
             name: '/sortabletable',
             page: () => SortableTable(),
+            transition: Transition.leftToRightWithFade),
+            GetPage(
+            name: '/complextable',
+            page: () => ComplexTable(),
             transition: Transition.leftToRightWithFade),
       ],
     );
