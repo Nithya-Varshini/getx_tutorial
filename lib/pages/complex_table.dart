@@ -35,13 +35,6 @@ class ComplexTable extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // Text(
-                              //   'Nested Table in Cell 1:',
-                              //   style: TextStyle(
-                              //     fontWeight: FontWeight.bold,
-                              //   ),
-                              // ),
-                              // SizedBox(height: 10),
                               Table(
                                 border: TableBorder.all(),
                                 children: [
@@ -54,13 +47,6 @@ class ComplexTable extends StatelessWidget {
                                           child: Text('Sub Cell 1'),
                                         ),
                                       ),
-                                      // TableCell(
-                                      //   child: Container(
-                                      //     padding: EdgeInsets.all(8.0),
-                                      //     color: Colors.green[200],
-                                      //     child: Text('Sub Cell 2'),
-                                      //   ),
-                                      // ),
                                     ],
                                   ),
                                   TableRow(
@@ -94,14 +80,6 @@ class ComplexTable extends StatelessWidget {
                                           ])
                                         ],
                                       )),
-
-                                      // TableCell(
-                                      //   child: Container(
-                                      //     padding: EdgeInsets.all(8.0),
-                                      //     color: Colors.green[300],
-                                      //     child: Text('Sub Cell 4'),
-                                      //   ),
-                                      // ),
                                     ],
                                   ),
                                 ],
